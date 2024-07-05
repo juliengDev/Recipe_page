@@ -1,0 +1,35 @@
+/** 
+
+	100 : Thin
+	•	200 : Extra Light (Ultra Light)
+	•	300 : Light
+	•	400 : Normal
+	•	500 : Medium
+	•	600 : Semi Bold (Demi Bold)
+	•	700 : Bold
+	•	800 : Extra Bold (Ultra Bold)
+	•	900 : Black (Heavy)
+  
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.ft-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.ft-body-bold {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ft-body-regular {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
