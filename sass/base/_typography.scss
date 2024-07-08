@@ -12,24 +12,37 @@
   
   */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   line-height: 150%;
 }
 
-.ft-heading {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-.ft-body-bold {
-  font-size: 1.4rem;
-  font-weight: 700;
+.ft-heading-l {
+  font-family: "Young Serif", serif;
+  font-size: 4rem;
+  font-weight: 400;
 }
 
-.ft-body-regular {
-  font-size: 1.4rem;
+.ft-heading-m {
+  font-family: "Young Serif", serif;
+  font-size: 2.8rem;
   font-weight: 400;
+}
+.ft-heading-s {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.ft-body-regular {
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+.ft-body-bold {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 700;
 }

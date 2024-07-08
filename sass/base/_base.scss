@@ -1,8 +1,11 @@
 :root {
-  --color-neonGreen: #c4f82a;
-  --color-black: #141414;
-  --color-darkgrey: #1f1f1f;
-  --color-grey: #333333;
+  --color-dark-charcoal: #312e2c;
+  --color-dark-raspberry: #7a284e;
+  --color-brandy-red: #854632;
+  --color-wenge-brown: #5f564d;
+  --color-eggshell: #f3e5d7;
+  --color-white-coffee: #e3ddd7;
+  --color-snow: #fff7fb;
   --color-pure-white: #ffffff;
 }
 
@@ -20,8 +23,8 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 0;
-  background-color: var(--color-black);
-  color: var(--color-pure-white);
+  background-color: var(--color-eggshell);
+  color: var(--color-wenge-brown);
 }
 html {
   box-sizing: border-box;

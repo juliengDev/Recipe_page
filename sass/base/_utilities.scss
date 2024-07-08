@@ -24,4 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include respond(mobile) {
+    max-width: $mobile-width;
+  }
 }
