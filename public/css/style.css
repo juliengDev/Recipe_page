@@ -85,7 +85,7 @@ FONT SIZE SYSTEM (px)
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 1;
 }
 
 .ft-heading-l {
@@ -138,7 +138,6 @@ body {
 }
 
 .container {
-  margin: 0 3.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,6 +147,20 @@ body {
   .container {
     max-width: 37.5rem;
   }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .break-line {
+    display: block;
+  }
+}
+
+.line {
+  display: block;
+  min-width: 31.1rem;
+  height: 1px;
+  background-color: var(--color-white-coffee);
+  margin: 3.2rem;
 }
 
 .card {
@@ -213,6 +226,11 @@ body {
   color: var(--color-grey);
 }
 
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
+
 .attribution {
   margin-top: 1.6rem;
   font-size: 1.1rem;
@@ -221,6 +239,49 @@ body {
 
 .attribution a {
   color: var(--color-neonGreen);
+}
+
+.recipe__banner {
+  margin: 4rem 3.2rem 3.2rem;
+}
+.recipe__banner__title {
+  font-family: "Young Serif", serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+  color: var(--color-dark-charcoal);
+}
+.recipe__banner__description {
+  color: var(--color-wenge-brown);
+}
+.recipe__preparation {
+  padding: 2.4rem;
+  background-color: var(--color-snow);
+  margin: 0 3.2rem 3.2rem;
+  border-radius: 12px;
+}
+.recipe__preparation__title {
+  color: var(--color-dark-raspberry);
+  margin-bottom: 1.6rem;
+}
+.recipe__preparation__list {
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0;
+}
+.recipe__preparation__list__item {
+  position: relative;
+  padding-left: 1.5em; /* Adjust this value as needed */
+}
+.recipe__preparation__list__item::before {
+  content: "•"; /* Unicode for bullet point */
+  color: var(--color-dark-raspberry); /* Bullet color */
+  font-size: 1.5em; /* Adjust bullet size */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.recipe__ingredients {
+  margin: 0 3.2rem 3.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

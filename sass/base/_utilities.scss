@@ -19,7 +19,7 @@
 }
 
 .container {
-  margin: 0 3.2rem;
+  // margin: 0 3.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,4 +27,18 @@
   @include respond(mobile) {
     max-width: $mobile-width;
   }
+}
+
+.break-line {
+  @include respond(mobile) {
+    display: block;
+  }
+}
+
+.line {
+  display: block;
+  min-width: 31.1rem;
+  height: 1px;
+  background-color: var(--color-white-coffee);
+  margin: 3.2rem;
 }

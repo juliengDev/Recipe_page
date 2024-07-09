@@ -1,0 +1,45 @@
+.recipe {
+  &__banner {
+    margin: 4rem 3.2rem 3.2rem;
+
+    &__title {
+      font-family: "Young Serif", serif;
+      font-size: 3.6rem;
+      font-weight: 400;
+      margin-bottom: 2.4rem;
+      color: var(--color-dark-charcoal);
+    }
+    &__description {
+      color: var(--color-wenge-brown);
+    }
+  }
+  &__preparation {
+    padding: 2.4rem;
+    background-color: var(--color-snow);
+    margin: 0 3.2rem 3.2rem;
+    border-radius: 12px;
+    &__title {
+      color: var(--color-dark-raspberry);
+      margin-bottom: 1.6rem;
+    }
+    &__list {
+      list-style: none; /* Remove default bullet points */
+      padding-left: 0;
+      &__item {
+        position: relative;
+        padding-left: 1.5em; /* Adjust this value as needed */
+        &::before {
+          content: "\2022"; /* Unicode for bullet point */
+          color: var(--color-dark-raspberry); /* Bullet color */
+          font-size: 1.5em; /* Adjust bullet size */
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+  &__ingredients {
+    margin: 0 3.2rem 3.2rem;
+  }
+}
