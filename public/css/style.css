@@ -138,9 +138,10 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 12.3rem auto 3.2rem;
   max-width: 73.6rem;
   padding: 0 3.2rem;
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,8 +150,10 @@ body {
 }
 @media only screen and (max-width: 23.4375em) {
   .container {
+    margin: 0;
     max-width: 37.5rem;
     padding: 0;
+    border-radius: none;
   }
 }
 
@@ -252,13 +255,14 @@ body {
   color: var(--color-dark-raspberry) !important;
 }
 
-.banner-img {
-  border-radius: 2.4rem;
+.banner {
+  border-radius: 1.2rem;
   margin-top: 4rem;
 }
 @media only screen and (max-width: 23.4375em) {
-  .banner-img {
-    border-radius: none;
+  .banner {
+    border-radius: 0;
+    margin-top: 0;
   }
 }
 

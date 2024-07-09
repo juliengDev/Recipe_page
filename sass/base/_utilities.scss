@@ -19,18 +19,20 @@
 }
 
 .container {
-  margin: 0 auto;
+  margin: 12.3rem auto 3.2rem;
   max-width: 73.6rem;
   padding: 0 3.2rem;
-
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-pure-white);
   @include respond(mobile) {
+    margin: 0;
     max-width: $mobile-width;
     padding: 0;
+    border-radius: none;
   }
 }
 
