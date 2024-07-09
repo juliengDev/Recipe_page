@@ -1,4 +1,9 @@
 .banner-img {
   max-width: 100%;
   height: auto;
+  border-radius: 1.2rem;
+
+  @include respond(mobile) {
+    border-radius: 0;
+  }
 }
