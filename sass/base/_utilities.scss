@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-pure-white);
   @include respond(mobile) {
     max-width: $mobile-width;
   }
@@ -41,4 +42,9 @@
   height: 1px;
   background-color: var(--color-white-coffee);
   margin: 3.2rem;
+}
+
+.bold {
+  font-weight: 700;
+  color: var(--color-wenge-brown);
 }

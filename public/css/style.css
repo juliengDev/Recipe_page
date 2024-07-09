@@ -142,6 +142,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-pure-white);
 }
 @media only screen and (max-width: 23.4375em) {
   .container {
@@ -161,6 +162,11 @@ body {
   height: 1px;
   background-color: var(--color-white-coffee);
   margin: 3.2rem;
+}
+
+.bold {
+  font-weight: 700;
+  color: var(--color-wenge-brown);
 }
 
 .card {
@@ -265,12 +271,16 @@ body {
   margin-bottom: 1.6rem;
 }
 .recipe__preparation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
   list-style: none; /* Remove default bullet points */
   padding-left: 0;
+  color: var(--color-wenge-brown);
 }
 .recipe__preparation__list__item {
   position: relative;
-  padding-left: 1.5em; /* Adjust this value as needed */
+  padding-left: 4rem; /* Adjust this value as needed */
 }
 .recipe__preparation__list__item::before {
   content: "•"; /* Unicode for bullet point */
@@ -282,6 +292,93 @@ body {
 }
 .recipe__ingredients {
   margin: 0 3.2rem 3.2rem;
+}
+.recipe__ingredients__title {
+  color: var(--color-brandy-red);
+  margin-bottom: 2.4rem;
+}
+.recipe__ingredients__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  list-style: none; /* Remove default bullet points */
+  padding-left: 0;
+  color: var(--color-wenge-brown);
+}
+.recipe__ingredients__list__item {
+  position: relative;
+  padding-left: 4rem; /* Adjust this value as needed */
+}
+.recipe__ingredients__list__item::before {
+  content: "•"; /* Unicode for bullet point */
+  color: var(--color-dark-raspberry); /* Bullet color */
+  font-size: 1.5em; /* Adjust bullet size */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.recipe__instructions {
+  margin: 0 3.2rem 3.2rem;
+}
+.recipe__instructions__title {
+  color: var(--color-brandy-red);
+  margin-bottom: 2.4rem;
+}
+.recipe__instructions__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  list-style: none; /* Remove default numbering */
+  counter-reset: step-counter; /* Initialize a counter */
+  color: var(--color-wenge-brown);
+}
+.recipe__instructions__item {
+  counter-increment: step-counter; /* Increment the counter */
+  position: relative; /* Ensure the numbering stays within the list item */
+  padding-left: 4rem; /* Add space for the custom number */
+}
+.recipe__instructions__item::before {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 700;
+  content: counter(step-counter) "."; /* Display the counter value followed by a dot */
+  position: absolute; /* Position it absolutely within the list item */
+  left: 0; /* Align it to the left */
+  top: 0; /* Align it to the top */
+  color: var(--color-brandy-red); /* Change this to whatever color you want */
+}
+.recipe__nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 0 3.2rem 4rem;
+}
+.recipe__nutrition__title {
+  color: var(--color-brandy-red);
+}
+.recipe__nutrition__description {
+  color: var(--color-wenge-brown);
+}
+.recipe__nutrition__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.recipe__nutrition__table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-white-coffee);
+}
+.recipe__nutrition__table tr:last-child td {
+  border-bottom: none;
+}
+.recipe__nutrition__table td:first-child {
+  text-align: center;
+  color: var(--color-wenge-brown);
+  font-weight: normal;
+}
+.recipe__nutrition__table td:last-child {
+  color: var(--color-brandy-red);
+  font-weight: bold;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

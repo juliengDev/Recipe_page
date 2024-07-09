@@ -23,11 +23,15 @@
       margin-bottom: 1.6rem;
     }
     &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
       list-style: none; /* Remove default bullet points */
       padding-left: 0;
+      color: var(--color-wenge-brown);
       &__item {
         position: relative;
-        padding-left: 1.5em; /* Adjust this value as needed */
+        padding-left: 4rem; /* Adjust this value as needed */
         &::before {
           content: "\2022"; /* Unicode for bullet point */
           color: var(--color-dark-raspberry); /* Bullet color */
@@ -41,5 +45,94 @@
   }
   &__ingredients {
     margin: 0 3.2rem 3.2rem;
+    &__title {
+      color: var(--color-brandy-red);
+      margin-bottom: 2.4rem;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      list-style: none; /* Remove default bullet points */
+      padding-left: 0;
+      color: var(--color-wenge-brown);
+      &__item {
+        position: relative;
+        padding-left: 4rem; /* Adjust this value as needed */
+        &::before {
+          content: "\2022"; /* Unicode for bullet point */
+          color: var(--color-dark-raspberry); /* Bullet color */
+          font-size: 1.5em; /* Adjust bullet size */
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+  &__instructions {
+    margin: 0 3.2rem 3.2rem;
+    &__title {
+      color: var(--color-brandy-red);
+      margin-bottom: 2.4rem;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      list-style: none; /* Remove default numbering */
+      counter-reset: step-counter; /* Initialize a counter */
+      color: var(--color-wenge-brown);
+    }
+    &__item {
+      counter-increment: step-counter; /* Increment the counter */
+      position: relative; /* Ensure the numbering stays within the list item */
+      padding-left: 4rem; /* Add space for the custom number */
+      &::before {
+        font-size: 1.6rem;
+        line-height: 150%;
+        font-weight: 700;
+        content: counter(step-counter) "."; /* Display the counter value followed by a dot */
+        position: absolute; /* Position it absolutely within the list item */
+        left: 0; /* Align it to the left */
+        top: 0; /* Align it to the top */
+        color: var(
+          --color-brandy-red
+        ); /* Change this to whatever color you want */
+      }
+    }
+  }
+  &__nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin: 0 3.2rem 4rem;
+    &__title {
+      color: var(--color-brandy-red);
+    }
+    &__description {
+      color: var(--color-wenge-brown);
+    }
+    &__table {
+      width: 100%;
+      border-collapse: collapse;
+      & td {
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-white-coffee);
+      }
+      & tr:last-child td {
+        border-bottom: none;
+      }
+      & td:first-child {
+        text-align: center;
+        color: var(--color-wenge-brown);
+        font-weight: normal;
+      }
+      & td:last-child {
+        color: var(--color-brandy-red);
+        font-weight: bold;
+        text-align: center;
+      }
+    }
   }
 }
