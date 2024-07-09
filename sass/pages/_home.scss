@@ -1,3 +1,12 @@
+.banner-img {
+  border-radius: 2.4rem;
+  margin-top: 4rem;
+
+  @include respond(mobile) {
+    border-radius: none;
+  }
+}
+
 .recipe {
   &__banner {
     margin: 4rem 3.2rem 3.2rem;
@@ -124,14 +133,23 @@
         border-bottom: none;
       }
       & td:first-child {
-        text-align: center;
+        text-align: left;
+        padding-left: 3.2rem;
         color: var(--color-wenge-brown);
         font-weight: normal;
+        @include respond(mobile) {
+          text-align: center;
+        }
       }
       & td:last-child {
+        padding-left: 3.2rem;
+
         color: var(--color-brandy-red);
         font-weight: bold;
-        text-align: center;
+        text-align: left;
+        @include respond(mobile) {
+          text-align: center;
+        }
       }
     }
   }
