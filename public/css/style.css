@@ -251,7 +251,7 @@ body {
 }
 
 .attribution {
-  margin-top: 1.6rem;
+  margin: 1.6rem 0 6rem;
   font-size: 1.1rem;
   text-align: center;
   color: var(--color-wenge-brown);
