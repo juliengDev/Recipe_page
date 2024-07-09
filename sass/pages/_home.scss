@@ -10,8 +10,7 @@
 
 .recipe {
   &__banner {
-    margin: 4rem 3.2rem 3.2rem;
-    padding-left: 1.2rem;
+    margin: 4rem 0 3.2rem;
 
     &__title {
       font-family: "Young Serif", serif;
@@ -27,7 +26,7 @@
   &__preparation {
     padding: 2.4rem;
     background-color: var(--color-snow);
-    margin: 0 3.2rem 3.2rem;
+    margin: 0 0 3.2rem;
     border-radius: 12px;
     &__title {
       color: var(--color-dark-raspberry);
@@ -55,7 +54,7 @@
     }
   }
   &__ingredients {
-    margin: 0 3.2rem 3.2rem;
+    margin: 0 0 3.2rem;
     &__title {
       color: var(--color-brandy-red);
       margin-bottom: 2.4rem;
@@ -82,7 +81,7 @@
     }
   }
   &__instructions {
-    margin: 0 3.2rem 3.2rem;
+    margin: 0 0 3.2rem;
     &__title {
       color: var(--color-brandy-red);
       margin-bottom: 2.4rem;
@@ -117,7 +116,7 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    margin: 0 3.2rem 4rem;
+    margin: 0 0 4rem;
     &__title {
       color: var(--color-brandy-red);
     }
