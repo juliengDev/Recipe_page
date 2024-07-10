@@ -288,6 +288,11 @@ body {
   margin-bottom: 2.4rem;
   color: var(--color-dark-charcoal);
 }
+@media only screen and (max-width: 23.4375em) {
+  .recipe__banner__title {
+    font-size: 3.6rem;
+  }
+}
 .recipe__banner__description {
   color: var(--color-wenge-brown);
 }
