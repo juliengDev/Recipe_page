@@ -3,7 +3,7 @@
   height: auto;
   border-radius: 1.2rem;
 
-  @include respond(mobile) {
+  @include respond(phone) {
     border-radius: 0;
   }
 }

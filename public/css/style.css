@@ -148,16 +148,16 @@ body {
   align-items: center;
   background-color: var(--color-pure-white);
 }
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .container {
-    margin: 0;
+    margin: 0 auto;
     max-width: 37.5rem;
     padding: 0;
     border-radius: 0;
   }
 }
 
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .break-line {
     display: block;
   }
@@ -176,75 +176,12 @@ body {
   color: var(--color-wenge-brown);
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.8rem;
-  max-width: 73.6rem;
-  margin: 17.4rem 4rem 0;
-  padding: 4rem;
-  background-color: var(--color-darkgrey);
-  border-radius: 1.2rem;
-  text-align: center;
-}
-@media only screen and (max-width: 23.4375em) {
-  .card {
-    max-width: 37.5rem;
-    padding: 2.4rem;
-    margin: 11.6rem 2.4rem 0;
-    gap: 2.4rem;
-  }
-}
-.card-avatar {
-  width: 8.8rem;
-  height: 8.8rem;
-  border-radius: 50%;
-}
-.card-presentation {
-  margin-top: 0.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-}
-.card-presentation-location {
-  color: var(--color-neonGreen);
-}
-.card-social {
-  max-width: 30.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-.card-social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  list-style-type: none;
-  padding: 1.4rem 11.5rem;
-  border-radius: 8px;
-  background-color: var(--color-grey);
-  transition: all 0.4s ease;
-}
-@media only screen and (max-width: 23.4375em) {
-  .card-social-link {
-    max-width: 27.9rem;
-    padding: 1.2rem 11.5rem;
-  }
-}
-.card-social-link:hover {
-  cursor: url("../../assets/images/handcursor.png"), auto;
-  background-color: var(--color-neonGreen);
-  color: var(--color-grey);
-}
-
 .banner-img {
   max-width: 100%;
   height: auto;
   border-radius: 1.2rem;
 }
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .banner-img {
     border-radius: 0;
   }
@@ -265,14 +202,14 @@ body {
   border-radius: 1.2rem;
   margin-top: 4rem;
 }
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .banner {
     border-radius: 0;
     margin-top: 0;
   }
 }
 
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .recipe {
     margin: 4rem 3.2rem;
     max-width: 90%;
@@ -288,7 +225,7 @@ body {
   margin-bottom: 2.4rem;
   color: var(--color-dark-charcoal);
 }
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .recipe__banner__title {
     font-size: 3.6rem;
   }
@@ -412,7 +349,7 @@ body {
   color: var(--color-wenge-brown);
   font-weight: normal;
 }
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .recipe__nutrition__table td:first-child {
     text-align: center;
   }
@@ -423,7 +360,7 @@ body {
   font-weight: bold;
   text-align: left;
 }
-@media only screen and (max-width: 23.4375em) {
+@media only screen and (max-width: 37.5em) {
   .recipe__nutrition__table td:last-child {
     text-align: center;
   }
