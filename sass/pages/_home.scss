@@ -9,6 +9,10 @@
 }
 
 .recipe {
+  @include respond(mobile) {
+    margin: 4rem 3.2rem;
+    max-width: 90%;
+  }
   &__banner {
     margin: 4rem 0 3.2rem;
 
